@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Edite perfil</title>
+	<link rel="stylesheet" href="style.css">
+	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+	
+	<div class="title-container flex-c-b">
+    <h1>
+        <a href="<?= BASE_URL . 'HomeSeller'; ?>">Dashboard /</a>
+        <span>Clientes</span>
+    </h1>
+    <div class="btn-title flex">
+        <i class='bx bx-arrow-back'></i>
+        <a href="<?= BASE_URL . 'Customer/listCustomer'; ?>">Voltar</a>
+    </div>
+</div>
+<div class="content-clientes mt-3">
+
+    <div class="cards-clientes card">
+        <div class="card-title">
+            <h3>Dados da empresa</h3>
+        </div>
+        <div class="cards-clientes-flex">
+            <div class="card-content">
+                <div class="list-item">
+                    <div class="list-item-title">Cnpj:</div>
+                    <div class="list-item-dados">30.058.107/0001-51</div>
+                </div>
+                <div class="list-item">
+                    <div class="list-item-title">Cep:</div>
+                    <div class="list-item-dados">63050-262</div>
+                </div>
+                <div class="list-item">
+                    <div class="list-item-title">Rua:</div>
+                    <div class="list-item-dados">Avenida Ailton Gomes</div>
+                </div>
+            </div>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
