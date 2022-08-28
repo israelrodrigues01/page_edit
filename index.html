@@ -2,8 +2,9 @@
 <html lang="pt-BR">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Edite perfil</title>
+    <link rel="stylesheet" href="variaveis.css">
 	<link rel="stylesheet" href="style.css">
 	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
@@ -20,7 +21,58 @@
         <a href="<?= BASE_URL . 'Customer/listCustomer'; ?>">Voltar</a>
     </div>
 </div>
-<div class="content-clientes mt-3">
+<div class="content-edit mt-3">
+    
+    <div class="container-edit flex-c-b">
+        
+        <div class="card-view-perfil card">
+            <div class="card-view-perfil_img flex-c-c">
+                <div class="image">
+                    <img src="img.png" alt="image">
+                </div>
+            </div>
+            <div class="card-view-perfil_conteudo mt-3">
+                <div class="list-item">
+                    <div class="list-item-title">Matrícula:</div>
+                    <div class="list-item-dados">012345</div>
+                </div>
+                 <div class="list-item">
+                    <div class="list-item-title">Nome:</div>
+                    <div class="list-item-dados">Israel Rodrigues</div>
+                </div>
+                 <div class="list-item">
+                    <div class="list-item-title">E-mail:</div>
+                    <div class="list-item-dados">ciceroisrael428@gmail.com</div>
+                </div>
+            </div>
+        </div>
+        <div class="card-edit-perfil card">
+            <div class="card-title">
+                <h3>Editar perfil</h3>
+            </div>
+            <div class="card-edit-perfil_alterar-img mt-2">
+                <label for="imgPerfil" class="btn-title">Alterar foto</label>
+                <input type="file" id="imgPerfil" name="imgPerfil" style="">
+            </div>
+            <div class="card-edit-perfil_form mt-3">
+                
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
+
+
+
+<!-- 
+    
+    <div class="content-clientes mt-3">
 
     <div class="cards-clientes card">
         <div class="card-title">
@@ -45,6 +97,4 @@
 
 </div>
 
-<script type="text/javascript" src="script.js"></script>
-</body>
-</html>
+ -->
