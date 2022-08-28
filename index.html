@@ -34,15 +34,15 @@
             <div class="card-view-perfil_conteudo mt-3">
                 <div class="list-item">
                     <div class="list-item-title">Matrícula:</div>
-                    <div class="list-item-dados">012345</div>
+                    <div class="list-item-dados" id="matricula">012345</div>
                 </div>
                  <div class="list-item">
                     <div class="list-item-title">Nome:</div>
-                    <div class="list-item-dados">Israel Rodrigues</div>
+                    <div class="list-item-dados" id="nome_view">Israel Rodrigues</div>
                 </div>
                  <div class="list-item">
                     <div class="list-item-title">E-mail:</div>
-                    <div class="list-item-dados">ciceroisrael428@gmail.com</div>
+                    <div class="list-item-dados" id="email_view">ciceroisrael428@gmail.com</div>
                 </div>
             </div>
         </div>
@@ -50,12 +50,41 @@
             <div class="card-title">
                 <h3>Editar perfil</h3>
             </div>
-            <div class="card-edit-perfil_alterar-img mt-2">
+            <div class="card-edit-perfil_alterar-img mt-3">
                 <label for="imgPerfil" class="btn-title">Alterar foto</label>
                 <input type="file" id="imgPerfil" name="imgPerfil" style="">
             </div>
             <div class="card-edit-perfil_form mt-3">
-                
+                <form action="#">
+                    <div class="form-inputs">
+                        <div class="row flex-c-b">
+                            <div class="row_input">
+                                <label for="name">Nome:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="row_input">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="row flex-c-b">
+                            <div class="row_input">
+                                <label for="password">Alterar senha:</label>
+                                <input type="text" id="password" name="password" required>
+                                <div class="eye-input">
+                                    <i class='bx bx-hide'></i>
+                                </div>
+                            </div>
+                            <div class="row_input">
+                                <label for="confir_password">Confirma senha:</label>
+                                <input type="emai" id="confir_password" name="confir_password" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row salver-edit_btn flex-c-c">
+                        <input type="button" class="btn-form" id="btn_enviar" value="Enviar">
+                    </div>
+                </form>
             </div>
         </div>
 

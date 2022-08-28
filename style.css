@@ -44,7 +44,51 @@
     font-size: var(--size-text);
 }
 
-.card-edit-perfil .card-edit-perfil_alterar-img input
+.card-edit-perfil
+{
+    height: 490px;
+}
+.card-edit-perfil_alterar-img input
 {
     visibility: hidden;
+}
+
+.card-edit-perfil .row
+{
+    gap: 40px;
+}
+.card-edit-perfil .row .row_input
+{
+    position: relative;
+    width: 100%;
+}
+.card-edit-perfil .row .row_input .eye-input
+{
+    position: absolute;
+    right: 0; bottom: 8px;
+    font-size: var(--size-text);
+    cursor: pointer;
+}
+.card-edit-perfil .row .row_input input
+{
+    width: 100%;
+    font-size: var(--size-subtext);
+    border: none;
+    border-bottom: 2px solid var(--blue);
+    padding: 10px 0;
+    background: transparent;
+    transition: border .2s ease-in-out;
+}
+.card-edit-perfil .row .row_input
+{
+    margin-bottom: 40px;
+}
+.card-edit-perfil .row .row_input input:focus
+{
+    border-bottom: 2px solid var(--green);
+}
+.card-edit-perfil_form .row.salver-edit_btn
+{
+    margin-top: 80px;
+    margin-bottom: 0;
 }
