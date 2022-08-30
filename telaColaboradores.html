@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Edite perfil</title>
+    <link rel="stylesheet" href="Assets/css/variaveis.css">
+	<link rel="stylesheet" href="Assets/css/colaboradores.css">
+	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+	
+<div class="title-container flex-c-b">
+    <h1>
+        <a href="<?= BASE_URL . 'HomeSeller'; ?>">Dashboard /</a>
+        <span>Clientes</span>
+    </h1>
+    <div class="btn-title flex">
+        <i class='bx bx-arrow-back'></i>
+        <a href="<?= BASE_URL . 'Customer/listCustomer'; ?>">Voltar</a>
+    </div>
+</div>
+<div class="list-clientes mt-3">
+    <div class="list-item-card card flex-c-b">
+        <div class="list-item">
+            <div class="list-item-title">Matrícula</div>
+            <div class="list-item-dados">012345</div>
+        </div>
+        <div class="list-item">
+            <div class="list-item-title">Nome</div>
+            <div class="list-item-dados">Pedro Lucas Moreira Silva</div>
+        </div>
+        <div class="list-item">
+            <div class="list-item-title">Carteira</div>
+            <div class="list-item-dados">458 Clientes</div>
+        </div>
+        <div class="list-item">
+            <div class="list-item-tipo feito">Ativo</div>
+        </div>
+
+        <div class="list-item infor">
+            <div class="list-item-dados edit-dados"><i class='bx bxs-edit' ></i></div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="Assets/js/jsonTabela.js"></script>
+</body>
+</html>

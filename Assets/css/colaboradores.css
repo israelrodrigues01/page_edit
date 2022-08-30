@@ -1,0 +1,30 @@
+.list-item{margin-top: 0;}
+.list-item .list-item-dados 
+{
+    position: relative;
+    border-bottom: none;
+    font-size: 20px;
+}
+.list-item .list-item-tipo
+{
+	padding: 10px 20px;
+	border-radius: 20px;
+	pointer-events: none;
+}
+.list-item .list-item-tipo.ativo
+{
+	background:  red;
+	color: #fff;
+}
+.list-item .list-item-tipo.feito
+{
+	color: #fff;
+	background:  green;
+}
+
+.list-item .list-item-dados.edit-dados
+{
+	font-size: 2rem;
+	padding-top: 8px;
+	cursor: pointer;
+}
